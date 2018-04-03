@@ -1,5 +1,5 @@
 Analysis & Synthesis report for data_bus
-Sat Mar 31 13:25:33 2018
+Tue Apr 03 15:01:20 2018
 Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
 
 
@@ -9,16 +9,7 @@ Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Analysis & Synthesis Source Files Read
-  5. Analysis & Synthesis Resource Usage Summary
-  6. Analysis & Synthesis Resource Utilization by Entity
-  7. Analysis & Synthesis RAM Summary
-  8. Logic Cells Representing Combinational Loops
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Source assignments for sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated
- 12. Parameter Settings for User Entity Instance: sw_pc_ar:inst12|LPM_RAM_IO:inst1
- 13. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Messages
 
 
 
@@ -44,20 +35,20 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 31 13:25:33 2018        ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 03 15:01:20 2018            ;
 ; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
 ; Revision Name                      ; data_bus                                     ;
 ; Top-level Entity Name              ; data_bus                                     ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 601                                          ;
-;     Total combinational functions  ; 573                                          ;
-;     Dedicated logic registers      ; 64                                           ;
-; Total registers                    ; 64                                           ;
-; Total pins                         ; 79                                           ;
-; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 2,048                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                            ;
-; Total PLLs                         ; 0                                            ;
+; Total logic elements               ; N/A until Partition Merge                    ;
+;     Total combinational functions  ; N/A until Partition Merge                    ;
+;     Dedicated logic registers      ; N/A until Partition Merge                    ;
+; Total registers                    ; N/A until Partition Merge                    ;
+; Total pins                         ; N/A until Partition Merge                    ;
+; Total virtual pins                 ; N/A until Partition Merge                    ;
+; Total memory bits                  ; N/A until Partition Merge                    ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                    ;
+; Total PLLs                         ; N/A until Partition Merge                    ;
 +------------------------------------+----------------------------------------------+
 
 
@@ -136,187 +127,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                             ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+
-; ../sw_pc_ar/sw_pc_ar.bdf         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/acer/Desktop/sw_pc_ar/sw_pc_ar.bdf                              ;
-; ../‘ÀÀ„∆˜/YSQi.vhd               ; yes             ; User VHDL File                           ; C:/Users/acer/Desktop/‘ÀÀ„∆˜/YSQi.vhd                                    ;
-; pc_ar.vhd                        ; yes             ; User VHDL File                           ; C:/Users/acer/Desktop/data_bus/pc_ar.vhd                                 ;
-; scan.vhd                         ; yes             ; User VHDL File                           ; C:/Users/acer/Desktop/data_bus/scan.vhd                                  ;
-; mux8.vhd                         ; yes             ; User VHDL File                           ; C:/Users/acer/Desktop/data_bus/mux8.vhd                                  ;
-; input.vhd                        ; yes             ; User VHDL File                           ; C:/Users/acer/Desktop/data_bus/input.vhd                                 ;
-; data_bus.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/acer/Desktop/data_bus/data_bus.bdf                              ;
-; LPM_RAM_IO.tdf                   ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/LPM_RAM_IO.tdf        ;
-; altram.inc                       ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altram.inc            ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/lpm_mux.inc           ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/lpm_decode.inc        ;
-; aglobal90.inc                    ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/aglobal90.inc         ;
-; altram.tdf                       ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altram.tdf            ;
-; memmodes.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/others/maxplus2/memmodes.inc        ;
-; altsyncram.inc                   ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altsyncram.inc        ;
-; altqpram.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altqpram.inc          ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altsyncram.tdf        ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/a_rdenreg.inc         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altrom.inc            ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/quartus/libraries/megafunctions/altdpram.inc          ;
-; db/altsyncram_sca1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/acer/Desktop/data_bus/db/altsyncram_sca1.tdf                    ;
-; jishuqi.vhd                      ; yes             ; Auto-Found VHDL File                     ; C:/Users/acer/Desktop/data_bus/jishuqi.vhd                               ;
-; decoder47.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/acer/Desktop/data_bus/decoder47.vhd                             ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 601   ;
-;                                             ;       ;
-; Total combinational functions               ; 573   ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 272   ;
-;     -- 3 input functions                    ; 122   ;
-;     -- <=2 input functions                  ; 179   ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 406   ;
-;     -- arithmetic mode                      ; 167   ;
-;                                             ;       ;
-; Total registers                             ; 64    ;
-;     -- Dedicated logic registers            ; 64    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 79    ;
-; Total memory bits                           ; 2048  ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 56    ;
-; Total fan-out                               ; 2150  ;
-; Average fan-out                             ; 2.97  ;
-+---------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                     ;
-+-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Library Name ;
-+-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
-; |data_bus                                       ; 573 (0)           ; 64 (0)       ; 2048        ; 0            ; 0       ; 0         ; 79   ; 0            ; |data_bus                                                                                                  ; work         ;
-;    |YSQi:inst3|                                 ; 471 (471)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|YSQi:inst3                                                                                       ; work         ;
-;    |decoder47:inst7|                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|decoder47:inst7                                                                                  ; work         ;
-;    |input:inst|                                 ; 41 (41)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|input:inst                                                                                       ; work         ;
-;    |jishuqi:inst4|                              ; 4 (4)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|jishuqi:inst4                                                                                    ; work         ;
-;    |mux8:inst6|                                 ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|mux8:inst6                                                                                       ; work         ;
-;    |sacn:inst5|                                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sacn:inst5                                                                                       ; work         ;
-;    |sw_pc_ar:inst12|                            ; 19 (0)            ; 16 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12                                                                                  ; work         ;
-;       |lpm_ram_io:inst1|                        ; 1 (1)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12|lpm_ram_io:inst1                                                                 ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram                                                     ; work         ;
-;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block                                ; work         ;
-;                |altsyncram_sca1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated ; work         ;
-;       |pc_ar:inst2|                             ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |data_bus|sw_pc_ar:inst12|pc_ar:inst2                                                                      ; work         ;
-+-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                         ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------------+
-; Name                                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------------+
-; sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; ./initial_file.mif ;
-+-------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------------+
-
-
-+------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops               ;
-+--------------------------------------------------------+---+
-; Logic Cell Name                                        ;   ;
-+--------------------------------------------------------+---+
-; YSQi:inst3|Mux1~0                                      ;   ;
-; YSQi:inst3|Mux5~0                                      ;   ;
-; YSQi:inst3|Mux7~0                                      ;   ;
-; YSQi:inst3|Mux3~0                                      ;   ;
-; YSQi:inst3|Mux2~0                                      ;   ;
-; YSQi:inst3|Mux6~0                                      ;   ;
-; YSQi:inst3|Mux4~0                                      ;   ;
-; YSQi:inst3|bus_Reg~36                                  ;   ;
-; Number of logic cells representing combinational loops ; 8 ;
-+--------------------------------------------------------+---+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 64    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 16    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 16:1               ; 4 bits    ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |data_bus|mux8:inst6|num_show[2] ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |data_bus|YSQi:inst3|bus_Reg[6]  ;
-; 52:1               ; 7 bits    ; 238 LEs       ; 168 LEs              ; 70 LEs                 ; No         ; |data_bus|YSQi:inst3|Mux3        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                        ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                         ;
-+---------------------------------+--------------------+------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sw_pc_ar:inst12|LPM_RAM_IO:inst1 ;
-+------------------------+--------------------+---------------------------------+
-; Parameter Name         ; Value              ; Type                            ;
-+------------------------+--------------------+---------------------------------+
-; LPM_WIDTH              ; 8                  ; Signed Integer                  ;
-; LPM_WIDTHAD            ; 8                  ; Signed Integer                  ;
-; LPM_NUMWORDS           ; 256                ; Signed Integer                  ;
-; LPM_INDATA             ; REGISTERED         ; Untyped                         ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED         ; Untyped                         ;
-; LPM_OUTDATA            ; UNREGISTERED       ; Untyped                         ;
-; LPM_FILE               ; ./initial_file.mif ; Untyped                         ;
-; USE_EAB                ; ON                 ; Untyped                         ;
-; DEVICE_FAMILY          ; Cyclone II         ; Untyped                         ;
-; AUTO_CARRY_CHAINS      ; ON                 ; AUTO_CARRY                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF                ; IGNORE_CARRY                    ;
-; AUTO_CASCADE_CHAINS    ; ON                 ; AUTO_CASCADE                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF                ; IGNORE_CASCADE                  ;
-+------------------------+--------------------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Mar 31 13:25:28 2018
+    Info: Processing started: Tue Apr 03 15:01:19 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off data_bus -c data_bus
-Info: Found 1 design units, including 1 entities, in source file ../sw_pc_ar/sw_pc_ar.bdf
-    Info: Found entity 1: sw_pc_ar
-Info: Found 2 design units, including 1 entities, in source file ../‘ÀÀ„∆˜/YSQi.vhd
-    Info: Found design unit 1: YSQi-one
-    Info: Found entity 1: YSQi
+Warning: Can't analyze file -- file D:/GitHub/vhdl/sw_pc_ar/sw_pc_ar.bdf is missing
+Warning: Can't analyze file -- file D:/GitHub/vhdl/‘ÀÀ„∆˜/YSQi.vhd is missing
 Info: Found 2 design units, including 1 entities, in source file pc_ar.vhd
     Info: Found design unit 1: pc_ar-rt1
     Info: Found entity 1: pc_ar
@@ -335,28 +155,6 @@ Info: Found 2 design units, including 1 entities, in source file input.vhd
 Warning: Using design file data_bus.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: data_bus
 Info: Elaborating entity "data_bus" for the top level hierarchy
-Info: Elaborating entity "sw_pc_ar" for hierarchy "sw_pc_ar:inst12"
-Info: Elaborating entity "pc_ar" for hierarchy "sw_pc_ar:inst12|pc_ar:inst2"
-Warning (10492): VHDL Process Statement warning at pc_ar.vhd(18): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info: Elaborating entity "LPM_RAM_IO" for hierarchy "sw_pc_ar:inst12|LPM_RAM_IO:inst1"
-Info: Elaborated megafunction instantiation "sw_pc_ar:inst12|LPM_RAM_IO:inst1"
-Info: Instantiated megafunction "sw_pc_ar:inst12|LPM_RAM_IO:inst1" with the following parameter:
-    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info: Parameter "LPM_FILE" = "./initial_file.mif"
-    Info: Parameter "LPM_INDATA" = "REGISTERED"
-    Info: Parameter "LPM_NUMWORDS" = "256"
-    Info: Parameter "LPM_OUTDATA" = "UNREGISTERED"
-    Info: Parameter "LPM_WIDTH" = "8"
-    Info: Parameter "LPM_WIDTHAD" = "8"
-Info: Elaborating entity "altram" for hierarchy "sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram"
-Warning: Assertion warning: altram does not support Cyclone II device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone II devices
-Info: Elaborated megafunction instantiation "sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram", which is child of megafunction instantiation "sw_pc_ar:inst12|LPM_RAM_IO:inst1"
-Info: Elaborating entity "altsyncram" for hierarchy "sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block"
-Info: Elaborated megafunction instantiation "sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "sw_pc_ar:inst12|LPM_RAM_IO:inst1"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_sca1.tdf
-    Info: Found entity 1: altsyncram_sca1
-Info: Elaborating entity "altsyncram_sca1" for hierarchy "sw_pc_ar:inst12|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated"
-Info: Elaborating entity "YSQi" for hierarchy "YSQi:inst3"
 Info: Elaborating entity "input" for hierarchy "input:inst"
 Warning (10492): VHDL Process Statement warning at input.vhd(15): signal "sw_bus" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at input.vhd(16): signal "button32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -370,24 +168,12 @@ Warning: Using design file decoder47.vhd, which is not specified as a design fil
     Info: Found entity 1: decoder47
 Info: Elaborating entity "decoder47" for hierarchy "decoder47:inst7"
 Info: Elaborating entity "mux8" for hierarchy "mux8:inst6"
-Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[7]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[6]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[5]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[4]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[3]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[2]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[1]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "input:inst|num[0]" to the node "sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated|q_a[0]" into an OR gate
-Info: Implemented 704 device resources after synthesis - the final resource count might be different
-    Info: Implemented 24 input pins
-    Info: Implemented 55 output pins
-    Info: Implemented 617 logic cells
-    Info: Implemented 8 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 308 megabytes
-    Info: Processing ended: Sat Mar 31 13:25:33 2018
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+Error: Node instance "inst12" instantiates undefined entity "sw_pc_ar"
+Error: Node instance "inst3" instantiates undefined entity "YSQi"
+Error: Quartus II Analysis & Synthesis was unsuccessful. 2 errors, 7 warnings
+    Error: Peak virtual memory: 294 megabytes
+    Error: Processing ended: Tue Apr 03 15:01:20 2018
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

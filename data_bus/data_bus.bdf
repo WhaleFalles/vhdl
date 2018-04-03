@@ -1024,11 +1024,6 @@ applicable agreement for further details.
 	(pt 520 224)
 )
 (connector
-	(text "clk_edu" (rect 216 544 253 556)(font "Arial" ))
-	(pt 216 560)
-	(pt 240 560)
-)
-(connector
 	(pt 680 208)
 	(pt 856 208)
 	(bus)
@@ -1088,6 +1083,11 @@ applicable agreement for further details.
 (connector
 	(pt 144 552)
 	(pt 168 552)
+)
+(connector
+	(text "clk_edu" (rect 216 544 253 556)(font "Arial" ))
+	(pt 352 560)
+	(pt 216 560)
 )
 (junction (pt 416 456))
 (junction (pt 144 552))

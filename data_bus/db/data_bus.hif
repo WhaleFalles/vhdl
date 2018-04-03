@@ -154,9 +154,6 @@ d:|quartus|quartus|quartus|libraries|megafunctions|aglobal90.inc
 d:|quartus|quartus|quartus|libraries|megafunctions|altram.inc
 e66a83eccf6717bed97c99d891ad085
 }
-# hierarchies {
-sw_pc_ar:inst12|lpm_ram_io:inst1
-}
 # macro_sequence
 
 # end
@@ -329,9 +326,6 @@ d:|quartus|quartus|quartus|libraries|megafunctions|altsyncram.inc
 1b5760dd55919ddb45bfb2c0e896218b
 d:|quartus|quartus|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
-}
-# hierarchies {
-sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram
 }
 # macro_sequence
 
@@ -648,42 +642,6 @@ d:|quartus|quartus|quartus|libraries|megafunctions|aglobal90.inc
 d:|quartus|quartus|quartus|libraries|megafunctions|altram.inc
 e66a83eccf6717bed97c99d891ad085
 }
-# hierarchies {
-sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block
-}
-# macro_sequence
-
-# end
-# entity
-YSQi
-# storage
-db|data_bus.(6).cnf
-db|data_bus.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-..|‘ÀÀ„∆˜|YSQi.vhd
-d41518c699df4a131e68fea7e22d751
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-YSQi:inst3
-}
-# lmf
-d:|quartus|quartus|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end
@@ -913,9 +871,6 @@ address_a0
 .|initial_file.mif
 83a1367fe257abd24c9a85b7bc497b65
 }
-# hierarchies {
-sw_pc_ar:inst12|lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_sca1:auto_generated
-}
 # macro_sequence
 
 # end
@@ -943,52 +898,9 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# hierarchies {
-sw_pc_ar:inst12|pc_ar:inst2
-}
 # lmf
 d:|quartus|quartus|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-sw_pc_ar
-# storage
-db|data_bus.(1).cnf
-db|data_bus.(1).cnf
-# case_insensitive
-# source_file
-..|sw_pc_ar|sw_pc_ar.bdf
-24a9f36cffba497f2407846c3aa73e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-sw_pc_ar:inst12
-}
-# macro_sequence
-
-# end
-# entity
-data_bus
-# storage
-db|data_bus.(0).cnf
-db|data_bus.(0).cnf
-# case_insensitive
-# source_file
-data_bus.bdf
-444f8d288a84ea65bc5696ac2741f9c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -1022,6 +934,26 @@ input:inst
 # lmf
 d:|quartus|quartus|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+data_bus
+# storage
+db|data_bus.(0).cnf
+db|data_bus.(0).cnf
+# case_insensitive
+# source_file
+data_bus.bdf
+a72babf333cc28ebbf2efb1b8ee7e651
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
